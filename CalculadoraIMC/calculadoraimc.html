@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de IMC</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section id="container">
+        <!-- Seção principal que envolve todo o conteúdo da página -->
+
+        <h1>Tabela IMC</h1>
+        <!-- Título da seção com a tabela de referência do IMC -->
+
+        <div id="tabela">
+            <!-- Container da tabela com os valores e classificações do IMC -->
+
+            <div id="imc">
+                <!-- Coluna com os intervalos dos valores de IMC -->
+                <h2>IMC</h2>
+                <p>Menos do que 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p>Entre 25 e 29,9</p>
+                <p>Entre 30 e 34,9</p>
+                <p>Entre 35 e 39,9</p>
+                <p>Mais do que 40</p>
+            </div>
+
+            <div id="resultado">
+                <!-- Coluna com as classificações correspondentes aos valores -->
+                <h2>Resultado</h2>
+                <p>Abaixo do peso</p>
+                <p>Peso normal</p>
+                <p>Sobrepeso</p>
+                <p>Obesidade Grau 1</p>
+                <p>Obesidade Grau 2</p>
+                <p>Obesidade Grau 3</p>
+            </div>
+        </div>    
+
+        <form id="formulario">
+            <!-- Formulário onde o usuário digita os dados para o cálculo do IMC -->
+            <h1>Calcule o seu IMC</h1>
+
+            <label for="input-peso">Peso:</label>
+            <!-- Rótulo para o campo de peso -->
+
+            <input type="number" id="input-peso" name="input-peso" step="0.01" placeholder="(Kg)">
+            <!-- Campo para o usuário digitar o peso. Usa step 0.01 para aceitar casas decimais -->
+
+            <label for="input-altura">Altura:</label>
+            <!-- Rótulo para o campo de altura -->
+
+            <input type="number" id="input-altura" name="input-altura" step="0.01" placeholder="(m)">
+            <!-- Campo para o usuário digitar a altura. Também com step para decimais -->
+
+            <button type="submit">Calcular</button>
+            <!-- Botão para enviar o formulário e calcular o IMC -->
+        </form>
+
+        <div id="resultado-imc">
+            <!-- Aqui será exibido o resultado do cálculo do IMC pelo JavaScript -->
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

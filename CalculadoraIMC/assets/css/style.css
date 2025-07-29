@@ -1,0 +1,130 @@
+/* Importa a fonte Open Sans do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Define variáveis globais de cor */
+:root {
+    --primary-color: rgb(16, 182, 233); /* Cor azul principal */
+    --primary-color-dark: rgb(0, 104, 136); /* Azul mais escuro para hover/active */
+}
+
+/* Reset e configurações básicas para todos os elementos */
+* {
+    box-sizing: border-box; /* Inclui padding e border dentro do width e height */
+    outline: 0; /* Remove contorno padrão ao focar em inputs */
+}
+
+/* Estilo base do corpo da página */
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0 20px; /* Adiciona padding lateral */
+    background: var(--primary-color); /* Fundo azul */
+    font-family: 'Open Sans', sans-serif; /* Define a fonte padrão */
+    font-size: 1.3em; /* Tamanho do texto base */
+    line-height: 1.5em; /* Espaçamento entre linhas */
+    min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
+    display: flex; /* Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Container principal da calculadora */
+#container {
+    max-width: 640px; /* Largura máxima */
+    width: 100%; /* Ocupa toda a largura possível até o máximo */
+    background-color: white; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Estilo para a seção da tabela IMC */
+#tabela {
+    display: flex; /* Deixa as colunas lado a lado */
+    gap: 100px; /* Espaçamento horizontal entre colunas */
+}
+
+/* Aplica estilo comum aos elementos do formulário */
+form input, form label, form button {
+    display: block; /* Cada um em sua linha */
+    width: 100%; /* Ocupa toda a largura */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo dos campos de input */
+form input {
+    font-size: 24px; /* Texto grande */
+    height: 50px; /* Altura fixa */
+    padding: 0 20px; /* Espaço interno nas laterais */
+}
+
+/* Estilo do input quando recebe foco */
+form input:focus {
+    outline: 1px solid var(--primary-color); /* Borda azul clara no foco */
+}
+
+/* Estilo do botão */
+form button {
+    border: none; /* Sem borda */
+    background: var(--primary-color); /* Fundo azul */
+    color: white; /* Texto branco */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: 700; /* Texto em negrito */
+    height: 50px; /* Altura fixa */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    margin-top: 30px; /* Espaço acima do botão */
+}
+
+/* Remove margens padrão do h1 */
+h1 {
+    margin: 0;
+}
+
+/* Cor de fundo ao passar o mouse no botão */
+form button:hover {
+    background: var(--primary-color-dark); /* Fundo azul escuro */
+}
+
+/* Cor de fundo ao clicar no botão */
+form button:active {
+    background-color: var(--primary-color-dark); /* Mesmo fundo escuro */
+}
+
+/* Estilos para as mensagens de resultado */
+.resultado-erro, 
+.resultado-abaixo, 
+.resultado-normal, 
+.resultado-sobrepeso, 
+.resultado-obesidade1, 
+.resultado-obesidade2, 
+.resultado-obesidade3 {
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    color: white; /* Texto branco */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Fundo vermelho claro para mensagens de erro */
+.resultado-erro {
+    background-color: rgb(255, 135, 135);
+}
+
+/* Fundo laranja para abaixo do peso */
+.resultado-abaixo {
+    background-color: orange;
+}
+
+/* Fundo verde para peso normal */
+.resultado-normal {
+    background-color: rgb(0, 122, 0);
+}
+
+/* Fundo laranja escuro para sobrepeso */
+.resultado-sobrepeso {
+    background-color: rgb(255, 102, 0);
+}
+
+/* Fundo vermelho para todos os graus de obesidade */
+.resultado-obesidade1, 
+.resultado-obesidade2, 
+.resultado-obesidade3 {
+    background-color: red;
+}
