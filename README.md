@@ -28,11 +28,15 @@ Clique aqui para visualizar no GitHub Pages (https://danieldev1918.github.io/Pro
 - JavaScript (Vanilla JS)
 
 ## Estrutura de pastas
-Projeto1-CalculadoradeIMC/
-├── index.html
-├── ativos/
-│   ├── style.css
-│   └── main.js
+
+Projeto1-CalculadoraIMC/
+├── index.html        ← Arquivo principal da página
+└── assets/
+    ├── css/
+    │   └── style.css ← Estilos do projeto
+    └── js/
+        └── main.js   ← Código JavaScript
+
 
 ## Como executar localmente
 
