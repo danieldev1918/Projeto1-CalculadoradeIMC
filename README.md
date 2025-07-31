@@ -10,7 +10,7 @@ Projeto simples desenvolvido em HTML, CSS e JavaScript que permite ao usuário c
 
 Clique aqui para visualizar no GitHub Pages (https://danieldev1918.github.io/Projeto1-CalculadoradeIMC/)
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Entrada de peso e altura
 - Cálculo automático do IMC
